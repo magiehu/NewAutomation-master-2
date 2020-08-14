@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 import pytest
 from common.tools import DisposeData
 

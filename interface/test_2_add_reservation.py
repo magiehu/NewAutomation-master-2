@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 import pytest
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
