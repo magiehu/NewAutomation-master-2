@@ -1,0 +1,105 @@
+# 1
+-
+  detail: !!str 1
+  name: ac.evaluationPeriod.editGet
+  api: /ac-web/api
+  method: post
+  headers: None
+  data:
+      {"entId":2401}
+  assert_type: equal
+  check: 0
+
+# 2
+-
+  detail: !!str 2
+  name: obj.pageinfo.get
+  api: /obj-web/api
+  method: post
+  headers: None
+  data:
+      {"entId":2401,"pageCode":"activeCreate"}
+  assert_type: equal
+  check: 0
+
+# 3
+-
+  detail: !!str 3
+  name: obj.objfield.selectshowjson
+  api: /obj-web/api
+  method: post
+  headers: None
+  data:
+      {"entId":2401,"pageNo":"543a90486b3b4350aaf1e6d47b5598e6"}
+  assert_type: equal
+  check: 0
+
+# 4
+-
+  detail: !!str 4
+  name: ac.activityType.list2
+  api: /ac-web/api
+  method: post
+  headers: None
+  data:
+      {}
+  assert_type: equal
+  check: 0
+
+# 5
+-
+  detail: !!str 5
+  name: ac.labelConf.list2
+  api: /ac-web/api
+  method: post
+  headers: None
+  data:
+      {}
+  assert_type: equal
+  check: 0
+
+# 新增市场活动
+-
+  detail: !!str 新增市场活动
+  name: ac.activity.add
+  api: /ac-web/api
+  method: post
+  data:
+      {"name":"111",
+      "startTime":"2019-11-04 21:48:41",
+      "pictureUrl":"https://pic.newbanker.cn/img/2401/2019/11/25/9de0d04923f34cebb0bd76a2ae49a342.jpg",
+      "endTime":"2019-11-27 21:48:43",
+      "typeId":51,
+      "summary":"324",
+      "deptCode":
+          {
+          "id":1,
+          "code":"GTEAMM0001",
+          "parentCode":"null",
+          "name":"总裁办",
+          "empCnt":0,
+          "departmentTypeCode":1,
+          "childs":[]
+          },
+      "shareCfg":1,
+      "signUpResult":1,
+      "shareChannel":[1,2],
+      "evaluationPeriod":30,
+      "scope":{
+          "innerAdvisorScope":
+              {
+              "officeIds":[],
+              "deptCodes":[],
+              "labelIds":[],
+              "type":-1
+              },
+      "outsideAdvisorScope":
+              {
+              "type":-1
+              },
+      "customerScope":
+              {
+              "labelIds":[-1],
+              "type":-1}}}
+  assert_type: equal
+  check: 0

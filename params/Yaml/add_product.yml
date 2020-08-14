@@ -1,0 +1,165 @@
+# 新增产品分类
+-
+  detail:
+  name:
+  api:
+  method:
+  headers:
+  data:
+  assert_type:
+  check:
+# 新增产品-基本信息(新接口)
+-
+  detail: 新增产品-基本信息
+  name: pdc.product.add
+  api: /pdc/api
+  method: post
+  headers: None
+  data:
+    {
+      "annualReturn": "",
+      "name": None,
+      "financier": "",
+      "hoster": "",
+      "introduction": "<p>详情</p>",
+      "incomeDistributionMode": "",
+      "minAmount": "10",
+      "maxAmount": "",
+      "minInterestDays": "",
+      "productReview": "点评",
+      "purpose": "",
+      "returnCycle": "",
+      "repaymentSource": "",
+      "riskValue": "1,2,4,8,16",
+      "riskLevel": 6,
+      "riskInformation": "<p>风险</p>",
+      "riskControl": "",
+      "trustType": "",
+      "termType": "",
+      "term": "期限",
+      "trustee": "",
+      "trustSize": "",
+      "valueDateType": "",
+      "valueDate": "",
+      "categoryId": 99
+    }
+  assert_type: equal
+  check: True
+# 完善信息-配置信息（老接口.json，入参为json{param}）
+-
+  detail: 完善信息-配置信息
+  name: old.product.config
+  api: /http/saas/product/updateConfig.json
+  method: post
+  headers: None
+  data:
+    {
+      "param": {
+        "id": None,
+        "totalSignedAmount": null,
+        "totalReservedAmount": null,
+        "soldOutType": null,
+        "visibleScope": {
+          "faDept": [],
+          "faPosition": [],
+          "faTag": [],
+          "customerTag": [],
+          "faScope": -1,
+          "ifaScope": -1,
+          "customerScope": -1
+        },
+        "dailySignedAmount": null,
+        "dailyReservedAmount": null,
+        "status": "0",
+        "accountStatus": "1",
+        "statusForReservation": "1,99",
+        "shareStatus": 1,
+        "shareChannel": 1,
+        "timingTrigger": null,
+        "quotaTrigger": null,
+        "accountList": [{
+                          "accountName": "开户名(脚本修改)",
+                          "bankName": "募集银行(脚本修改)",
+                          "accountNo": "募集账号(脚本修改)",
+                          "memo": "打款备注(脚本修改)"
+                        }]
+      }
+    }
+  assert_type: equal
+  check: True
+# 完善信息-营销信息(老接口.json,入参为Form表单)
+-
+  detail:
+  name: old.product.marketing
+  api: /http/saas/product/updateMarketingInfo.json
+  method: post
+  headers: None
+  data:
+  assert_type: equal
+  check: True
+# 完善信息-咨询服务费
+-
+  detail: 完善信息-咨询服务费
+  name: old.product.commission
+  api: /http/saas/product/updateCommission.json
+  method: post
+  headers: None
+  data:
+    {
+      "param": {
+        "productId": None,
+        "indRateRangeList": [],
+        "indShowInApp": "1",
+        "indProductRate": "30",
+        "rateRangeList": [],
+        "showInApp": "1",
+        "productRate": "30",
+        "commissionRate": "30",
+        "independCommissionRate": "30"
+      }
+    }
+  assert_type: equal
+  check: True
+# 完善信息-业绩系数
+-
+  detail:
+  name: old.product.performance
+  api: /http/saas/product/updatePerformance.json
+  method: post
+  headers: None
+  data:
+    {
+      "param": {
+        "productId": None,
+        "indRateRangeList": [],
+        "indShowInApp": "1",
+        "indProductRate": "20",
+        "rateRangeList": [],
+        "showInApp": "1",
+        "productRate": "20",
+        "performanceRate": "20",
+        "indPerformanceRate": "20"
+      }
+    }
+  assert_type: equal
+  check: True
+# 上架产品
+-
+  detail:
+  name:
+  api:
+  method:
+  headers:
+  data:
+  assert_type:
+  check:
+# 推荐产品
+-
+  detail:
+  name:
+  api:
+  method:
+  headers:
+  data:
+  assert_type:
+  check:

@@ -1,0 +1,31 @@
+# 新增活动类型
+-
+  detail: 新增活动类型
+  name: ac.activityType.add
+  api: /ac-web/api
+  method: post
+  headers: None
+  data:
+      {
+	    "typeName": "活动类型——济宁1",
+	    "sortNum": "1",
+	    "showStatus": 2,
+	    "entId": 2401,
+	    "labelName": ""
+      }
+  assert_type: equal
+  check: 0
+-
+  detail: 新增活动标签
+  name: ac.activityType.add
+  api: /ac-web/api
+  method: post
+  headers: None
+  data:
+      {
+	    "sortNum": "2",
+	    "entId": 2401,
+	    "labelName": "标签——1"
+      }
+  assert_type: equal
+  check: 0
