@@ -93,7 +93,7 @@ def chrome_config(test_add_new_product, random_massage):
     chrome_option.add_experimental_option('useAutomationExtension', False)
     chrome_option.add_experimental_option("excludeSwitches", ['enable-automation'])
     details = {
-        'driver': webdriver.Chrome(options=chrome_option),
+        'driver': webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=chrome_option),
         'repayment_name': "UI-收益管理方案" + str(random_massage['number(1-400)']),
         'calculate_rule_name': "UI-计算参数方案" + str(random_massage['number(1-400)']),
         'interest_allowance_name': "UI-贴息管理方案" + str(random_massage['number(1-400)']),
