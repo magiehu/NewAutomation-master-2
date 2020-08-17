@@ -5,9 +5,8 @@
 时间：2019-10-23
 """
 import requests
-# from ..common.Sign import Sign
-# from ..common.Sign import Sign
-from common.Sign import Sign
+from ..common.Sign import Sign
+# from common.Sign import Sign
 import json
 import logging
 

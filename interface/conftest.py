@@ -1,7 +1,7 @@
 import pytest
 from faker import Faker
-from common.tools import DisposeData
-# from ..common.tools import DisposeData
+# from common.tools import DisposeData
+from ..common.tools import DisposeData
 from selenium import webdriver
 
 @pytest.fixture(scope='session')
