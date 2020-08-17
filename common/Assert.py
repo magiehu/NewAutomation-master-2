@@ -1,7 +1,8 @@
 """
 封装断言
 """
-from ..DB_fixture.mysql_db import DB
+# from ..DB_fixture.mysql_db import DB
+from DB_fixture.mysql_db import DB
 
 
 class Assert:

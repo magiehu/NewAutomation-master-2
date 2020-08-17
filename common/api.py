@@ -6,7 +6,8 @@
 """
 import requests
 # from ..common.Sign import Sign
-from ..common.Sign import Sign
+# from ..common.Sign import Sign
+from common.Sign import Sign
 import json
 import logging
 
