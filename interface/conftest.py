@@ -1,9 +1,8 @@
 import pytest
 from faker import Faker
 # from DB_fixture.mysql_db import DB_fixture
-from common.tools import DisposeData
+from ..common.tools import DisposeData
 from selenium import webdriver
-
 
 @pytest.fixture(scope='session')
 def get_code():

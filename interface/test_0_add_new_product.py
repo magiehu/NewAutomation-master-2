@@ -1,6 +1,6 @@
 #-*- coding: UTF-8 -*-
 import pytest
-from common.tools import DisposeData
+from ..common.tools import DisposeData
 
 
 # from multiprocessing import Process
